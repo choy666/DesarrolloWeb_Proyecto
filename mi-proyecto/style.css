@@ -1,0 +1,340 @@
+/*Selector universal en css*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight:bolder;
+    text-align: center;
+    padding: 20px;
+    font-size:50px;
+    color: rgb(57, 194, 182);
+    color: white;
+}
+h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size:20px;
+    padding: 20px;
+}
+/*GRID*/
+#grid{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 260px 1fr 200px;
+    grid-template-columns: 1fr;
+}
+
+/* Header */
+header{
+    /* grid-area */
+    grid-area: header;
+    border: solid 5px rgb(0, 255, 221);
+    background-image: url(../images/fondo.png);
+    background-position: center;
+    background-size:100%;
+    background-repeat: no-repeat;
+    margin-bottom:50px;
+}
+header nav{
+    margin: 17px;
+    display: flex;
+    justify-content: center;
+}
+header nav ul li{
+    display: inline;
+    position: relative;
+}
+header nav ul li a{
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size: 15px;
+    margin: -2px;
+    padding: 16px;
+    border: solid;
+    border-width: 1px; 
+}
+header nav ul li a:hover{ 
+    background-color: aquamarine;
+}
+/* Main */
+main{
+    /* grid-area */
+    grid-area: main;
+    overflow:hidden;
+    padding: 10px;
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+}
+.mainContenido{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.mainContenido ul li div{
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    width: auto;
+    height: auto;
+}
+.mainContenido ul li div h2{
+    margin: 5px;
+    border-bottom: 2px solid rgb(196, 196, 196);
+    border-top: 2px solid rgb(196, 196, 196);
+    padding: 5px;
+}
+.productos-box{
+    width:450px;
+    height: 450px;
+    border-radius: 20px;
+    border:solid 3px white;
+    justify-items: center;
+    align-items: center;
+    overflow: hidden;
+}
+.containerRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: white;
+}
+.containerRow div{
+    border:solid 3px black;
+    border-radius: 20px;
+    background-color: rgb(196, 196, 196);
+    margin: 10px;
+    padding: 20px;
+    height: 400px;
+    width: 300px;
+    overflow: hidden;
+}
+.containerRow div img{
+    width:100%;
+    height: 80%;
+}
+.containerRow div h2{
+    margin: 5px;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    padding: 5px;
+}
+.formulario_cont1{
+    border: 2px solid white; 
+    border-radius: 20px;
+    background-color: white;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+}
+.formulario_cont2{
+    background-color: rgb(196, 196, 196);
+    padding: 20px;
+    border-radius: 20px;
+}
+.formulario{
+    margin: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+}
+.formulario h2{
+    text-align: center;
+    font-size: 30px;
+}
+.formulario div input:hover{
+    background-color: aquamarine;
+}
+/* Footer */
+footer{
+    /* grid-area */
+    grid-area: footer;
+    overflow:hidden;
+    height: 230px;
+    width: auto;
+    background-image: url(../images/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: solid 5px rgb(0, 255, 221);
+}
+footer div{
+    display: flex;
+    justify-content:space-between;
+    height: auto;
+    width: auto;
+}
+footer span a img{
+    margin: 10px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+footer span a{
+    text-align: center;
+    color: black;
+}
+footer span a:hover{
+    color: brown;
+}
+iframe{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+/* Full Responsive */
+/* Todas las paginas cambian su interfaz depende las medidas de pantalla */
+/* movile*/
+@media (max-width:480px)
+{
+    h1{
+        font-size:30px;
+        padding: 0px;
+    }
+    h2{
+        font-size: 15px;
+    }
+    #grid
+    {
+        grid-template-rows:140px 1fr 140px;
+    }
+    /* Header */
+    header{
+        margin-bottom: 35px;
+    }
+    header nav{
+        margin-top: 8px;
+    }
+    header a img{
+        height: 100%;
+    }
+    header nav ul li a{
+        font-size: 10px;
+        padding: 10px;
+    }
+    /* Main */
+    .mainContenido ul li div{
+        height: auto;
+        width: auto;
+    }
+    .productos-box{
+        height: 250px;
+        width: 250px;
+    }
+    #formResponsive{
+        height: 510px;
+        align-items: center;
+    }
+    .containerRow div{
+        border:solid 2px black;
+        height: 250px;
+        width: 150px;
+    }
+    /* Footer */
+    footer{
+        width: auto;
+        height: 150px;
+    }
+    footer div span a img{
+        margin: 10px 0px 0px 10px;
+        height: 75px;
+        width: 75px;
+    }
+    footer div span iframe{
+        width: 110px;
+        height: 120px;
+    }
+}
+/* Tablet */
+@media(min-width:481px) and (max-width:768px)
+{
+    #grid
+    {
+        grid-template-rows: 200px 1fr 200px;
+    }
+    /* Header */
+    header
+    {
+        margin-bottom: 0px;
+        height: 200px;
+    }
+    header nav{
+        margin-top: 20;
+    }
+    /* Main */
+    main{
+        margin-top: 60px;
+    }
+    .mainContenido ul li div{
+        height: auto;
+        width: auto;
+    }
+    .productos-box{
+        height: 350px;
+        width: 300px;
+    }
+    #formResponsive{
+        height: 500px;
+        align-items: center;
+    }
+    .containerRow div{
+        border:solid 2px black;
+        height: 350px;
+        width: 250px;
+    }
+}
+/* Desktop */
+@media(min-width:769px) and (max-width:1279px)
+{
+    #grid
+    {
+        grid-template-rows: 260px 1fr 200px;
+    }
+    /* main */
+    #formResponsive{
+        height: 750px;
+        align-items: center;
+    }
+    .formulario_cont1{
+        width: 700px;
+        height: 500px;
+    }
+    .formulario_cont2{
+        padding: 40px;
+    }
+    .formulario_cont2 input{
+      height: 25px; 
+    }
+    .enviar{
+        width: 70px;
+    }
+    .formulario{
+        margin: 20px;
+        font-size: 30px;
+    }
+    .formulario h2{
+        text-align: center;
+        font-size: 40px;
+    }
+    .containerRow div{
+        border:solid 2px black;
+        height: 315px;
+        width: 250px;
+    }
+}
