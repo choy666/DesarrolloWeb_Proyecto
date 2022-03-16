@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mujeres</title>
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
+    <!-- Css Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!--Css-->
     <link rel="stylesheet" href="../mi-proyecto/style.css">
     <!-- Animate -->
@@ -16,63 +18,106 @@
     <link href="https://fonts.googleapis.com/css2? family=Roboto&family=Roboto+Serif:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Grid -->
-    <div id="grid">
-        <header>
-            <a href="../mi-proyecto/index.html"><img  class="animate__animated animate__bounceInRight" src="../images/logo.png" alt="Logo"></a>
-            <nav> 
-                <ul>
-                    <li><a href="../mi-proyecto/index.html">Inicio</a></li>
-                    <li><a href="../pages/mujer.html">Mujer</a></li>
-                    <li><a href="../pages/hombre.html">Hombre</a></li>
-                    <li><a href="../pages/blanco.html">Blanco</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>    
+    <!-- Bootstrap -->
+    <div id="grid" class="container-fluid margin_padding_0 position-relative">
+        <header class="row col-12 col-lg-12 col-md-12">
+            <div class="icono margin_padding_0">
+                <a href="../mi-proyecto/index.html"><img class="animate__animated animate__bounceInRight" src="../images/logo.png" alt="Logo"></a>
+            </div>
         </header>
-        <main>
-            <h1 class="animate__animated animate__pulse">Catalogo de Mujeres</h1>
-            <div class ="containerRow">
-                <div class="card">
-                    <img id="remera1"src="../images/remeram1.PNG" alt="ropaMuejer1">
-                    <h2>Musculosa blanca</h2>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand resaltador" href="./mujer.html">Mujer</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-link" href="../mi-proyecto/index.html">Inicio</a>
+                <a class="nav-link" href="../pages/hombre.html">Hombre</a>
+                <a class="nav-link" href="../pages/blanco.html">Blanco</a>
+                <a class="nav-link" href="../pages/contacto.html">Contacto</a>
                 </div>
-                <div class="card">
-                    <img id="remera2" src="../images/remeram2.PNG" alt="ropaMuejer2">
-                    <h2>Remera mangas cortas azul</h2>
+            </div>
+            </div>
+        </nav>
+        <main class="container">
+            <div class="row col-12 col-lg-12 col-md-12">
+                <h1 class="animate__animated animate__pulse">Catalogo de Mujeres</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram1" class="card">
+                        <img src="../images/remeram1.PNG" class="card-img-top" alt="ropaMuejer1">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Musculosa blanca cuello ancho</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="remera3" src="../images/remeram3.PNG" alt="ropaMuejer3">
-                    <h2>Remera mangas largas blanca</h2>
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram2" class="card">
+                        <img src="../images/remeram2.PNG" class="card-img-top" alt="ropaMuejer2">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Remera mangas cortas azul entallada</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="remera4" src="../images/remeram4.PNG" alt="ropaMuejer4">
-                    <h2>Remera mangas cortas blanca</h2>
+                <div class="col-5 col-md-4  col-lg-3 margin_padding_0">
+                    <div id="remeram3" class="card">
+                        <img src="../images/remeram3.PNG" class="card-img-top" alt="ropaMuejer3">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Remera mangas largas blanca</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="remera5" src="../images/remeram5.PNG" alt="ropaMuejer5">
-                    <h2>Chomba blanca</h2>
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram4" class="card">
+                        <img src="../images/remeram4.PNG" class="card-img-top" alt="ropaMuejer4">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Remera mangas cortas blanca</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="remera6" src="../images/remeram6.PNG" alt="ropaMuejer6">
-                    <h2>Remera cuello en V blanca</h2>
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram5" class="card">
+                        <img src="../images/remeram5.PNG" class="card-img-top" alt="ropaMuejer5">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Chomba blanca cuello polo</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="remera7" src="../images/remeram7.PNG" alt="ropaMuejer7">
-                    <h2>Remeron mangas cortas blanca</h2>
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram6" class="card">
+                        <img src="../images/remeram6.PNG" class="card-img-top" alt="ropaMuejer6">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Remera cuello en V blanca</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="remera8" src="../images/remeram8.PNG" alt="ropaMuejer8">
-                    <h2>Remera mangas largas azul</h2>
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram7" class="card">
+                        <img src="../images/remeram7.PNG" class="card-img-top" alt="ropaMuejer7">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Remeron mangas cortas blanca</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5 col-md-4 col-lg-3 margin_padding_0">
+                    <div id="remeram8" class="card">
+                        <img src="../images/remeram8.PNG" class="card-img-top" alt="ropaMuejer8">
+                        <div class="card-body margin_padding_0">
+                            <p class="card-text">Remera mangas largas azul</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
-        <footer>
+        <footer class="row col-12 col-lg-12 col-md-12">
             <div>
                 <span>
                     <a href=""><img src="../images/wsp.png" alt="Whatssap"></a>
-                    <a href=""><h3>3834xxxxxx</h3></a>
-                    <a href=""><h3>3834xxxxxx</h3></a>
+                    <a href=""><h3 class="margin_padding_0">3834xxxxxx</h3></a>
+                    <a href=""><h3 class="margin_padding_0">3834xxxxxx</h3></a>
                 </span>
                 <span>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d876.6415672209893!2d-65.80202517083205!3d-28.492605998904562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94242935813f2917%3A0x990218acb2da793b!2sSandra%20Indumentaria!5e0!3m2!1ses-419!2sar!4v1644626964213!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -80,5 +125,8 @@
             </div>
         </footer>
     </div>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
