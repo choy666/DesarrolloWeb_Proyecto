@@ -1,0 +1,78 @@
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/maps";
+main{
+    background-color: $background-M-color ;
+    text-align: map-get($background-main, text-centrado);
+    margin: map-get($background-main, margen);
+    padding: map-get($background-main, pad);
+    div{
+        h1{
+            @media screen and (max-width: 570px){
+                font-size: nth($h1-size, 1);
+            }
+            @media screen and (min-width: 571px) and (max-width: 1024px){
+                font-size: nth($h1-size, 2);
+            }
+            @media screen and (min-width: 1025px){
+                font-size: nth($h1-size, 3);
+            }
+        }
+    }
+    .mi-card{
+        margin: map-get($mi-card, margen);
+        box-shadow: map-get($mi-card, sombra);
+        transition: map-get($mi-card, transicion);
+        a{
+            img{
+                border-radius: map-get($mi-card, borde);
+            }
+        }
+        div{
+            margin:map-get($mi-card, margen-txt);
+            h2{
+                @media screen and (max-width: 570px){
+                    font-size: nth($h2-size, 1);
+                }
+                @media screen and (min-width: 571px) and (max-width: 1024px){
+                    font-size: nth($h2-size, 2);
+                }
+                @media screen and (min-width: 1025px){
+                    font-size: nth($h2-size, 3);
+                }
+            }
+        }
+        &:hover{
+            transform: map-get($mi-card, transformacion);
+            box-shadow: map-get($mi-card, sombra-hover);
+        }
+    }
+    form{
+        &:hover{
+            transform: map-get($mi-card, transformacion);
+            box-shadow: map-get($mi-card, sombra-hover);
+        }
+        .form-txt-principal{
+            @media screen and (max-width: 570px){
+                font-size: nth($formulario-primario-txt, 1);
+            }
+            @media screen and (min-width: 571px) and (max-width: 1024px){
+                font-size: nth($formulario-primario-txt, 2);
+            }
+            @media screen and (min-width: 1025px){
+                font-size: nth($formulario-primario-txt, 3);
+            }
+        }
+        .form-txt-secundario{
+            @media screen and (max-width: 570px){
+                font-size: nth($formulario-secundario-txt, 1);
+            }
+            @media screen and (min-width: 571px) and (max-width: 1024px){
+                font-size: nth($formulario-secundario-txt, 2);
+            }
+            @media screen and (min-width: 1025px){
+                font-size: nth($formulario-secundario-txt, 3);
+            }
+        }
+    }
+}

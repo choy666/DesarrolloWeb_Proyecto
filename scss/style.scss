@@ -1,0 +1,16 @@
+//reset
+*{
+    margin: 0;
+    padding:0;
+}
+//reset-container y row de bootstraps
+.margin_padding_0{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+//imports
+@import "../base/fonts";
+@import "../components/header";
+@import "../components/nav";
+@import "../components/main";
+@import "../components/footer";

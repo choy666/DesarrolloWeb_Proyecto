@@ -1,0 +1,14 @@
+@import "../base/variables";
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: "Robot Serif,  sans serif";
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+    color: $font-color;
+}

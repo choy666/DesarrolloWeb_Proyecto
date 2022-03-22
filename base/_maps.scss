@@ -1,0 +1,37 @@
+@import "../base/variables";
+//fondo header-footer
+$background-H-F: (
+    fondo: url("./images/fondo.png"),
+    fondo-color:$background-H-F-color,
+    centrado: center,
+    repeticion: no-repeat,
+    escalado: cover,
+    borde: solid 5px rgb(0, 255, 221),
+);
+//fondo main
+$background-main:(
+    text-centrado:center,
+    margen: 20px,
+    pad: 20px,
+);
+//card
+$mi-card:(
+    //card
+    margen: 10px,
+    sombra: 0 2px 2px rgba(0, 0, 0, 0.2),
+    transicion: all 0.25s,
+    //card-img
+    borde:8px,
+    margen-txt:10px,
+    //hover
+    transformacion: translateY(-15px),
+    sombra-hover: 0 12px 16px rgba(0, 0, 0, 0.2),
+);
+//iframe
+$iframe:(
+    margen: 10px,
+    border-radio: 20px,
+    borde: 3px solid white,
+    altura: 100%,
+    ancho: 100%,
+);
