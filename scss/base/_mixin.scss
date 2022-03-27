@@ -1,0 +1,11 @@
+//miniCard-font
+@mixin font-miniCard($peso,$margen){
+    font-weight: $peso;
+    margin: $margen;
+}
+//minicard
+@mixin minicard($margen,$margentop,$pad){
+    margin: $margen;
+    margin-top: $margentop;
+    padding: $pad
+}

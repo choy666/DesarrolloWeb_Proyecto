@@ -1,10 +1,5 @@
-@import "../base/maps";
+@import "../base/extends";
 @import "../base/animate";
 header{
-    background-color: map-get($background-H-F,background-H-F-color);
-    border: map-get($background-H-F,borde);
-    background-image: map-get($background-H-F,fondo);
-    background-position: map-get($background-H-F,centrado);
-    background-size: map-get($background-H-F,escalado);
-    background-repeat: map-get($background-H-F,repeticion);
+    @extend %background-H-F;
 }

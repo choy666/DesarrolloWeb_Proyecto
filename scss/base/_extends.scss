@@ -1,0 +1,31 @@
+@import "./variables";
+//main
+%main{
+    background-color: $background-M-color;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+//fondo header-footer
+%background-H-F{
+    background-image: url("../../images/fondo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid 5px rgb(0, 255, 221);
+    background-color: $background-H-F-color;
+}
+//iframe footer
+%iframe{
+    margin: 10px;
+    border-radius: 20px;
+    border:  3px solid white;
+    height: 100%;
+    width: 100%;
+}
+//card-shadow-main
+%card-shadow{
+    border:none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    //margin: 10px;
+}

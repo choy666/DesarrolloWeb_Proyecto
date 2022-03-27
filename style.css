@@ -8,6 +8,31 @@
   padding: 0 !important;
 }
 
+section {
+  background-color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+footer, header {
+  background-image: url("../../images/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 5px #00ffdd;
+  background-color: #51d7d4;
+}
+
+.animate__pulse {
+  --animate-duration: 3s;
+  animation-iteration-count: 5;
+}
+
+.animate__bounceInRight {
+  --animate-duration: 3s;
+}
+
 li {
   list-style: none;
 }
@@ -24,21 +49,9 @@ h1 {
   color: black;
 }
 
-.animate__pulse {
-  --animate-duration: 3s;
-  animation-iteration-count: 5;
-}
-
-.animate__bounceInRight {
-  --animate-duration: 3s;
-}
-
-header {
-  border: solid 5px #00ffdd;
-  background-image: url("./images/fondo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+h3 {
+  font-weight: 400;
+  margin: 0;
 }
 
 nav {
@@ -80,109 +93,129 @@ nav a.nav-principal {
   }
 }
 
-main {
-  background-color: white;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
+section .card-shadow {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
+
 @media screen and (max-width: 570px) {
-  main div h1 {
+  section div h1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  main div h1 {
+  section div h1 {
     font-size: 70px;
   }
 }
 @media screen and (min-width: 1025px) {
-  main div h1 {
+  section div h1 {
     font-size: 90px;
   }
 }
-main .mi-card {
+section .mi-card {
   margin: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.25s;
 }
-main .mi-card a img {
+section .mi-card a img {
   border-radius: 8px;
 }
-main .mi-card div {
+section .mi-card div {
   margin: 10px;
 }
 @media screen and (max-width: 570px) {
-  main .mi-card div h2 {
+  section .mi-card div h2 {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  main .mi-card div h2 {
+  section .mi-card div h2 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1025px) {
-  main .mi-card div h2 {
+  section .mi-card div h2 {
     font-size: 25px;
   }
 }
-main .mi-card:hover {
+section .mi-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-main form:hover {
-  transform: translateY(-15px);
-  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+section .miniCard {
+  margin: 10px;
+  margin-top: 50px;
+  padding: 0;
+}
+section .miniCard-title {
+  font-weight: bold;
+  margin: 10px;
 }
 @media screen and (max-width: 570px) {
-  main form .form-txt-principal {
-    font-size: 20px;
+  section .miniCard-title {
+    font-size: 25px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  main form .form-txt-principal {
+  section .miniCard-title {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1025px) {
-  main form .form-txt-principal {
+  section .miniCard-title {
+    font-size: 35px;
+  }
+}
+section form:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 570px) {
+  section form .form-txt-principal {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 571px) and (max-width: 1024px) {
+  section form .form-txt-principal {
+    font-size: 30px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  section form .form-txt-principal {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 570px) {
-  main form .form-txt-secundario {
+  section form .form-txt-secundario {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  main form .form-txt-secundario {
+  section form .form-txt-secundario {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1025px) {
-  main form .form-txt-secundario {
+  section form .form-txt-secundario {
     font-size: 25px;
   }
 }
 
-footer {
-  border: solid 5px #00ffdd;
-  background-image: url("./images/fondo.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+footer div span iframe {
+  margin: 10px;
+  border-radius: 20px;
+  border: 3px solid white;
+  height: 100%;
+  width: 100%;
 }
+
 footer div {
   display: flex;
   justify-content: space-between;
 }
 footer div span {
   margin: 10px;
-}
-footer div span div {
-  border: 3px solid white;
-  border-radius: 20px;
 }
 @media screen and (max-width: 570px) {
   footer div span div {
@@ -202,10 +235,6 @@ footer div span div {
     width: 160px;
   }
 }
-footer div span div a img {
-  width: 100%;
-  height: 100%;
-}
 footer div span a:hover {
   color: brown;
 }
@@ -223,13 +252,6 @@ footer div span a:hover {
   footer div span a h3 {
     font-size: 35px;
   }
-}
-footer div span iframe {
-  margin: 10px;
-  border-radius: 20px;
-  border: 3px solid white;
-  height: 100%;
-  width: 100%;
 }
 @media screen and (max-width: 570px) {
   footer div span iframe {

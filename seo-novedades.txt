@@ -1,0 +1,12 @@
+Nuevo:
+- title de las pags con informacion clave.
+- etiquetas de textos h1->h6.
+- etiquetas alt en todas las images con palabras claves.
+- uso correcto de etiquetas semanticas en contenedores padres(main-hedaer-nav-footer-section-article).
+- uso de favicon.
+- nueva etiqueta meta name "description".
+- nueva etiqueta meta name "keywords".
+- 95% de rendimiento y 81% en seo en lighthouse.
+- ruta de carpetas del proyecto en ingles.
+- agregado de imagen.svg en footer.
+- reduccion de peso de images.png
