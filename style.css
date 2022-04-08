@@ -8,29 +8,9 @@
   padding: 0 !important;
 }
 
-section {
-  background-color: white;
-  text-align: center;
-  margin: 20px;
-  padding: 20px;
-}
-
-footer, header {
-  background-image: url("../../images/fondo.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: solid 5px #00ffdd;
-  background-color: #51d7d4;
-}
-
 .animate__pulse {
-  --animate-duration: 3s;
+  animation-duration: 3s;
   animation-iteration-count: 5;
-}
-
-.animate__bounceInRight {
-  --animate-duration: 3s;
 }
 
 li {
@@ -54,152 +34,192 @@ h3 {
   margin: 0;
 }
 
-nav {
-  padding: 10px;
-}
-nav a.nav-principal {
+header nav .nav-principal {
   background-color: #26f7b1;
   border-radius: 8px;
   padding: 5px;
 }
 @media screen and (max-width: 570px) {
-  nav a.nav-principal {
+  header nav .nav-principal {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  nav a.nav-principal {
+  header nav .nav-principal {
     font-size: 25px;
   }
 }
 @media screen and (min-width: 1025px) {
-  nav a.nav-principal {
+  header nav .nav-principal {
     font-size: 30px;
   }
 }
+header nav .nav-principal:hover {
+  transition: all 0.75s;
+  transform: scale(1.2, 1.2);
+}
 @media screen and (max-width: 570px) {
-  nav div div.nav-secundario {
+  header nav .nav-secundario {
     font-size: 18px;
+  }
+  header nav .nav-secundario:hover {
+    transition: all 0.75s;
+    transform: translateX(5px);
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  nav div div.nav-secundario {
+  header nav .nav-secundario {
     font-size: 23px;
+  }
+  header nav .nav-secundario:hover {
+    transition: all 0.75s;
+    transform: translateX(5px);
   }
 }
 @media screen and (min-width: 1025px) {
-  nav div div.nav-secundario {
+  header nav .nav-secundario {
     font-size: 28px;
+  }
+  header nav .nav-secundario:hover {
+    transition: all 0.75s;
+    transform: scale(1.1, 1.1);
   }
 }
 
-section .card-shadow {
-  border: none;
+header nav {
+  border-radius: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 10px;
+  border: solid 5px #51d7d4;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+main section {
+  background-color: white;
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+main section .card-shadow {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 570px) {
-  section div h1 {
+  main section div h1 {
     font-size: 50px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  section div h1 {
+  main section div h1 {
     font-size: 70px;
   }
 }
 @media screen and (min-width: 1025px) {
-  section div h1 {
+  main section div h1 {
     font-size: 90px;
   }
 }
-section .mi-card {
+main section .mi-card {
   margin: 10px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: all 0.25s;
 }
-section .mi-card a img {
+main section .mi-card a img {
   border-radius: 8px;
 }
-section .mi-card div {
+main section .mi-card div {
   margin: 10px;
 }
 @media screen and (max-width: 570px) {
-  section .mi-card div h2 {
+  main section .mi-card div h2 {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  section .mi-card div h2 {
+  main section .mi-card div h2 {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1025px) {
-  section .mi-card div h2 {
+  main section .mi-card div h2 {
     font-size: 25px;
   }
 }
-section .mi-card:hover {
+main section .mi-card:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-section .miniCard {
+main section .miniCard {
   margin: 10px;
   margin-top: 50px;
   padding: 0;
 }
-section .miniCard-title {
+main section .miniCard-title {
   font-weight: bold;
   margin: 10px;
 }
 @media screen and (max-width: 570px) {
-  section .miniCard-title {
+  main section .miniCard-title {
     font-size: 25px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  section .miniCard-title {
+  main section .miniCard-title {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1025px) {
-  section .miniCard-title {
+  main section .miniCard-title {
     font-size: 35px;
   }
 }
-section form:hover {
+main section form {
+  margin-bottom: 50px;
+}
+main section form:hover {
   transform: translateY(-15px);
   box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 570px) {
-  section form .form-txt-principal {
+  main section form .form-txt-principal {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  section form .form-txt-principal {
+  main section form .form-txt-principal {
     font-size: 30px;
   }
 }
 @media screen and (min-width: 1025px) {
-  section form .form-txt-principal {
+  main section form .form-txt-principal {
     font-size: 40px;
   }
 }
 @media screen and (max-width: 570px) {
-  section form .form-txt-secundario {
+  main section form .form-txt-secundario {
     font-size: 15px;
   }
 }
 @media screen and (min-width: 571px) and (max-width: 1024px) {
-  section form .form-txt-secundario {
+  main section form .form-txt-secundario {
     font-size: 20px;
   }
 }
 @media screen and (min-width: 1025px) {
-  section form .form-txt-secundario {
+  main section form .form-txt-secundario {
     font-size: 25px;
   }
+}
+
+footer {
+  background-image: url("../../images/fondo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid 5px #00ffdd;
+  background-color: #51d7d4;
 }
 
 footer div span iframe {

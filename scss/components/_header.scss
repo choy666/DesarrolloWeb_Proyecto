@@ -1,5 +1,54 @@
-@import "../base/extends";
 @import "../base/animate";
+@import "../base/variables";
+@import "../base/listas";
+@import "../base/fonts";
 header{
-    @extend %background-H-F;
+    nav{
+        //extends
+        @extend %nav;
+        .nav-principal{
+            background-color: $nav-btn-actual;
+            border-radius: 8px;
+            padding: 5px;
+            //media
+            @media screen and (max-width: 570px){
+                font-size: nth($nav-size, 1);
+            }
+            @media screen and (min-width: 571px) and (max-width: 1024px){
+                font-size: nth($nav-size, 2);
+            }
+            @media screen and (min-width: 1025px){
+                font-size: nth($nav-size, 3);
+            }
+            //hover
+            &:hover{
+                transition: all 0.75s;
+                transform: scale(1.20,1.20);
+            }
+        }
+        .nav-secundario{
+            //media
+            @media screen and (max-width: 570px){
+                font-size: nth($nav-sec-size, 1);
+                &:hover{
+                    transition: all 0.75s;
+                    transform:translateX(5px);
+                }
+            }
+            @media screen and (min-width: 571px) and (max-width: 1024px){
+                font-size: nth($nav-sec-size, 2);
+                &:hover{
+                    transition: all 0.75s;
+                    transform:translateX(5px);
+                }
+            }
+            @media screen and (min-width: 1025px){
+                font-size: nth($nav-sec-size, 3);
+                &:hover{
+                    transition: all 0.75s;
+                    transform: scale(1.10,1.10);
+                }
+            }
+        }
+    }
 }

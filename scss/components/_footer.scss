@@ -2,7 +2,7 @@
 @import "../base/listas";
 footer{
     //extends
-    @extend %background-H-F;
+    @extend %background-F;
     div{
         display: flex;
         justify-content: space-between;

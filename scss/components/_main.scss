@@ -2,106 +2,108 @@
 @import "../base/listas";
 @import "../base/maps";
 @import "../base/mixin";
-section{
-    //extends
-    @extend %main;
-    div{
-        h1{
-            //media
-            @media screen and (max-width: 570px){
-                font-size: nth($h1-size, 1);
-            }
-            @media screen and (min-width: 571px) and (max-width: 1024px){
-                font-size: nth($h1-size, 2);
-            }
-            @media screen and (min-width: 1025px){
-                font-size: nth($h1-size, 3);
-            }
-        }
-    }
-    .mi-card{
-        //maps
-        margin: map-get($mi-card, margen);
-        box-shadow: map-get($mi-card, sombra);
-        transition: map-get($mi-card, transicion);
-        a{
-            img{
-                border-radius: map-get($mi-card, borde);
-            }
-        }
+main{
+    section{
+        //extends
+        @extend %main;
         div{
-            margin:map-get($mi-card, margen-txt);
-            h2{
+            h1{
                 //media
                 @media screen and (max-width: 570px){
-                    font-size: nth($h2-size, 1);
+                    font-size: nth($h1-size, 1);
                 }
                 @media screen and (min-width: 571px) and (max-width: 1024px){
-                    font-size: nth($h2-size, 2);
+                    font-size: nth($h1-size, 2);
                 }
                 @media screen and (min-width: 1025px){
-                    font-size: nth($h2-size, 3);
+                    font-size: nth($h1-size, 3);
                 }
             }
         }
-        &:hover{
-            transform: map-get($mi-card, transformacion);
-            box-shadow: map-get($mi-card, sombra-hover);
+        .mi-card{
+            //maps
+            margin: map-get($mi-card, margen);
+            box-shadow: map-get($mi-card, sombra);
+            transition: map-get($mi-card, transicion);
+            a{
+                img{
+                    border-radius: map-get($mi-card, borde);
+                }
+            }
+            div{
+                margin:map-get($mi-card, margen-txt);
+                h2{
+                    //media
+                    @media screen and (max-width: 570px){
+                        font-size: nth($h2-size, 1);
+                    }
+                    @media screen and (min-width: 571px) and (max-width: 1024px){
+                        font-size: nth($h2-size, 2);
+                    }
+                    @media screen and (min-width: 1025px){
+                        font-size: nth($h2-size, 3);
+                    }
+                }
+            }
+            &:hover{
+                transform: map-get($mi-card, transformacion);
+                box-shadow: map-get($mi-card, sombra-hover);
+            }
         }
-    }
-    .card-shadow{
-        //extends
-        @extend %card-shadow;
-    }
-    //---------------------------------------------
-    .miniCard{
-        //mixin
-        @include minicard(10px,50px,0);
-    }
-    .miniCard-title{
-        //mixin
-        @include font-miniCard(bold,10px);
-        //media
-        @media screen and (max-width: 570px){
-            font-size: nth($miniCard-text-title, 1);
+        .card-shadow{
+            //extends
+            @extend %card-shadow;
         }
-        @media screen and (min-width: 571px) and (max-width: 1024px){
-            font-size: nth($miniCard-text-title, 2);
+        //---------------------------------------------
+        .miniCard{
+            //mixin
+            @include minicard(10px,50px,0);
         }
-        @media screen and (min-width: 1025px){
-            font-size: nth($miniCard-text-title, 3);
-        }
-
-    }
-    //---------------------------------------------
-    form{
-        //maps
-        &:hover{
-            transform: map-get($mi-card, transformacion);
-            box-shadow: map-get($mi-card, sombra-hover);
-        }
-        .form-txt-principal{
+        .miniCard-title{
+            //mixin
+            @include font-miniCard(bold,10px);
             //media
             @media screen and (max-width: 570px){
-                font-size: nth($formulario-primario-txt, 1);
+                font-size: nth($miniCard-text-title, 1);
             }
             @media screen and (min-width: 571px) and (max-width: 1024px){
-                font-size: nth($formulario-primario-txt, 2);
+                font-size: nth($miniCard-text-title, 2);
             }
             @media screen and (min-width: 1025px){
-                font-size: nth($formulario-primario-txt, 3);
+                font-size: nth($miniCard-text-title, 3);
             }
         }
-        .form-txt-secundario{
-            //media
-            @media screen and (max-width: 570px){
-                font-size: nth($formulario-secundario-txt, 1);
+        //---------------------------------------------
+        form{
+            //maps
+            margin-bottom: 50px;
+            &:hover{
+                transform: map-get($mi-card, transformacion);
+                box-shadow: map-get($mi-card, sombra-hover);
             }
-            @media screen and (min-width: 571px) and (max-width: 1024px){
-                font-size: nth($formulario-secundario-txt, 2);
+            .form-txt-principal{
+                //media
+                @media screen and (max-width: 570px){
+                    font-size: nth($formulario-primario-txt, 1);
+                }
+                @media screen and (min-width: 571px) and (max-width: 1024px){
+                    font-size: nth($formulario-primario-txt, 2);
+                }
+                @media screen and (min-width: 1025px){
+                    font-size: nth($formulario-primario-txt, 3);
+                }
             }
-            @media screen and (min-width: 1025px){
-                font-size: nth($formulario-secundario-txt, 3);
+            .form-txt-secundario{
+                //media
+                @media screen and (max-width: 570px){
+                    font-size: nth($formulario-secundario-txt, 1);
+                }
+                @media screen and (min-width: 571px) and (max-width: 1024px){
+                    font-size: nth($formulario-secundario-txt, 2);
+                }
+                @media screen and (min-width: 1025px){
+                    font-size: nth($formulario-secundario-txt, 3);
+                }
             }
         }
     }

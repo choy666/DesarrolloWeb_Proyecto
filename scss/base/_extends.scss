@@ -1,13 +1,22 @@
 @import "./variables";
+//nav
+%nav{
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding:10px;
+    border: solid 5px $background-H-F-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 //main
 %main{
     background-color: $background-M-color;
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 5px;
 }
-//fondo header-footer
-%background-H-F{
+//fondo footer
+%background-F{
     background-image: url("../../images/fondo.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +34,5 @@
 }
 //card-shadow-main
 %card-shadow{
-    border:none;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
