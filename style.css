@@ -214,7 +214,7 @@ main section form:hover {
 }
 
 footer {
-  background-image: url("../../images/fondo.png");
+  background-image: url("./images/fondo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
